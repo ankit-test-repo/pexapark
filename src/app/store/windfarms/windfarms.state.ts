@@ -11,6 +11,7 @@ import {
   WindfarmOutputModel
 } from '../../model/windfarm';
 import {DateTime} from 'luxon';
+import {MAX_OUTPUT} from '../../constants/static-data';
 
 @State<WindfarmModel>({
   name: 'windfarms',
@@ -36,7 +37,6 @@ import {DateTime} from 'luxon';
 
 @Injectable()
 export class WindfarmsState {
-  maxOutput: number = 10;
 
   constructor(private windFarmService: WindfarmService) {
   }
@@ -97,7 +97,6 @@ export class WindfarmsState {
       mergeMap(group => group.pipe(toArray())),
       tap(items => {
         const item = this.calculateCapacity(items);
-        console.log(item);
         const state = ctx.getState();
         ctx.patchState({
           ...state,
@@ -107,7 +106,6 @@ export class WindfarmsState {
     )
   }
 
-
   calculateCapacity(rawEnergy: EnergyOutput[]) : EnergyCapacity {
     const date = this.toShortDate(rawEnergy[0].timestamp)
     const readings = rawEnergy.length
@@ -116,7 +114,7 @@ export class WindfarmsState {
     );
     return {
       date: date,
-      capacityFactor: (totalOutput/ readings) / this.maxOutput,
+      capacityFactor: (totalOutput/ readings) / MAX_OUTPUT,
       readings: readings
     }
   }

@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import {FormsModule} from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FarmCardComponent } from './components/farm-card/farm-card.component';
+import {AgChartsAngularModule} from 'ag-charts-angular';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FarmCardComponent } from './components/farm-card/farm-card.component';
     FormsModule,
     HttpClientModule,
     NgxsModule.forRoot([WindfarmsState]),
-    AppRoutingModule
+    AppRoutingModule,
+    AgChartsAngularModule
   ],
   providers: [WindfarmService],
   bootstrap: [AppComponent]

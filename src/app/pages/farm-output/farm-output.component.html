@@ -1,6 +1,9 @@
-
-<div *ngIf="(capacityFactor$ | async) as capacityFactors">
-  <ul>
-    <li *ngFor="let output of capacityFactors">{{output.date}} : {{output.readings}} : {{output.capacityFactor}}</li>
-  </ul>
+<div class="form-group mt-4 mb-5">
+  <label for="bucketSize" class="form-label">Bucket size : <strong>{{bucketSize}}</strong> hours</label>
+<input type="range" [(ngModel)]="bucketSize" class="form-range" min="4" max="24" step="1" id="bucketSize">
+</div>
+<div *ngIf="chartOptions" class="row">
+  <ag-charts-angular class="col capacity-factor"
+    [options]="chartOptions">
+  </ag-charts-angular>
 </div>
