@@ -20,9 +20,7 @@
     "@angular/router": "~13.3.0",
     "@ngxs/store": "^3.7.3",
     "bootstrap": "^5.2.0-beta1",
-    "chart.js": "^3.6.0",
     "luxon": "^2.4.0",
-    "ng2-charts": "^3.0.11",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

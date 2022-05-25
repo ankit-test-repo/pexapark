@@ -13,7 +13,6 @@ import { HeaderComponent } from './components/header/header.component';
 import {FormsModule} from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FarmCardComponent } from './components/farm-card/farm-card.component';
-import {NgChartsModule} from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -29,8 +28,7 @@ import {NgChartsModule} from 'ng2-charts';
     FormsModule,
     HttpClientModule,
     NgxsModule.forRoot([WindfarmsState]),
-    AppRoutingModule,
-    NgChartsModule
+    AppRoutingModule
   ],
   providers: [WindfarmService],
   bootstrap: [AppComponent]
