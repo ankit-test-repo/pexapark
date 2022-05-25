@@ -1,0 +1,13 @@
+<div class="card text-center clickable" [class.border-success]="farm.averageOutput > 6"
+     [class.border-warning]="farm.averageOutput < 7 && farm.averageOutput > 3"
+     [class.border-danger]="farm.averageOutput < 4"
+     (click)="findFarm(farm.id)"
+>
+  <div class="card-body">
+    <h5 class="card-title">{{farm.name}}</h5>
+    <p class="card-text">{{farm.location}}</p>
+  </div>
+  <div class="card-footer text-muted">
+    Average output: {{farm.averageOutput}} MW
+  </div>
+</div>

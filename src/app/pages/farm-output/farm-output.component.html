@@ -1,0 +1,6 @@
+
+<div *ngIf="(capacityFactor$ | async) as capacityFactors">
+  <ul>
+    <li *ngFor="let output of capacityFactors">{{output.date}} : {{output.readings}} : {{output.capacityFactor}}</li>
+  </ul>
+</div>

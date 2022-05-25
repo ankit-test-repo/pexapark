@@ -1,0 +1,11 @@
+<input [(ngModel)]="searchText"   class="form-control form-control-lg mt-4 mb-4" type="text" placeholder="search..." aria-label="search farm" />
+
+
+<div *ngIf="(windFarms$ | async) as farms">
+  <div class="row">
+    <div *ngFor="let farm of farms | filter: searchText :'name'" class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <app-farm-card [farm]="farm"></app-farm-card>
+    </div>
+  </div>
+
+</div>
