@@ -6,10 +6,6 @@
       "energy": 7
     },
     {
-      "timestamp": 1652184000,
-      "energy": 3.9
-    },
-    {
       "timestamp": 1652187600,
       "energy": 2
     },
@@ -90,10 +86,6 @@
       "energy": 8.9
     },
     {
-      "timestamp": 1652259600,
-      "energy": 1.8
-    },
-    {
       "timestamp": 1652263200,
       "energy": 6.5
     },
@@ -112,10 +104,6 @@
     {
       "timestamp": 1652277600,
       "energy": 2.4
-    },
-    {
-      "timestamp": 1652281200,
-      "energy": 5.9
     },
     {
       "timestamp": 1652284800,
@@ -141,10 +129,7 @@
       "timestamp": 1652302800,
       "energy": 0.4
     },
-    {
-      "timestamp": 1652306400,
-      "energy": 4.3
-    },
+
     {
       "timestamp": 1652310000,
       "energy": 6.4
@@ -246,10 +231,6 @@
       "energy": 1.6
     },
     {
-      "timestamp": 1652400000,
-      "energy": 3
-    },
-    {
       "timestamp": 1652403600,
       "energy": 1.4
     },
@@ -269,14 +250,8 @@
       "timestamp": 1652418000,
       "energy": 2.4
     },
-    {
-      "timestamp": 1652421600,
-      "energy": 7.6
-    },
-    {
-      "timestamp": 1652425200,
-      "energy": 3.9
-    },
+
+
     {
       "timestamp": 1652428800,
       "energy": 8
@@ -298,10 +273,6 @@
       "energy": 0.5
     },
     {
-      "timestamp": 1652446800,
-      "energy": 1.7
-    },
-    {
       "timestamp": 1652450400,
       "energy": 3.3
     },
@@ -320,10 +291,6 @@
     {
       "timestamp": 1652464800,
       "energy": 3.7
-    },
-    {
-      "timestamp": 1652468400,
-      "energy": 0.1
     },
     {
       "timestamp": 1652472000,
@@ -364,10 +331,6 @@
     {
       "timestamp": 1652504400,
       "energy": 6.8
-    },
-    {
-      "timestamp": 1652508000,
-      "energy": 1.3
     },
     {
       "timestamp": 1652511600,
@@ -434,10 +397,6 @@
       "energy": 9
     },
     {
-      "timestamp": 1652569200,
-      "energy": 1.6
-    },
-    {
       "timestamp": 1652572800,
       "energy": 0.2
     },
@@ -445,10 +404,7 @@
       "timestamp": 1652576400,
       "energy": 6.9
     },
-    {
-      "timestamp": 1652580000,
-      "energy": 0.5
-    },
+
     {
       "timestamp": 1652583600,
       "energy": 5.8
@@ -461,10 +417,7 @@
       "timestamp": 1652590800,
       "energy": 3.2
     },
-    {
-      "timestamp": 1652594400,
-      "energy": 0.9
-    },
+
     {
       "timestamp": 1652598000,
       "energy": 3.9
@@ -480,10 +433,6 @@
     {
       "timestamp": 1652608800,
       "energy": 8.1
-    },
-    {
-      "timestamp": 1652612400,
-      "energy": 1.2
     },
     {
       "timestamp": 1652616000,
@@ -502,10 +451,6 @@
       "energy": 1.2
     },
     {
-      "timestamp": 1652630400,
-      "energy": 1.9
-    },
-    {
       "timestamp": 1652634000,
       "energy": 0.9
     },
@@ -521,10 +466,7 @@
       "timestamp": 1652644800,
       "energy": 3
     },
-    {
-      "timestamp": 1652648400,
-      "energy": 10
-    },
+
     {
       "timestamp": 1652652000,
       "energy": 3.9
@@ -624,22 +566,6 @@
     {
       "timestamp": 1652738400,
       "energy": 3.5
-    },
-    {
-      "timestamp": 1652742000,
-      "energy": 5.2
-    },
-    {
-      "timestamp": 1652745600,
-      "energy": 2.1
-    },
-    {
-      "timestamp": 1652749200,
-      "energy": 7.5
-    },
-    {
-      "timestamp": 1652752800,
-      "energy": 1.2
     },
     {
       "timestamp": 1652756400,
@@ -742,10 +668,6 @@
       "energy": 6.2
     },
     {
-      "timestamp": 1652846400,
-      "energy": 9.4
-    },
-    {
       "timestamp": 1652850000,
       "energy": 7
     },
@@ -788,10 +710,6 @@
     {
       "timestamp": 1652886000,
       "energy": 7.4
-    },
-    {
-      "timestamp": 1652889600,
-      "energy": 3.8
     },
     {
       "timestamp": 1652893200,

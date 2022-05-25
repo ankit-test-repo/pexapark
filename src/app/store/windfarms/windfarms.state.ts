@@ -12,6 +12,7 @@ import {
 } from '../../model/windfarm';
 import {DateTime} from 'luxon';
 import {MAX_OUTPUT} from '../../constants/static-data';
+import {BucketService} from '../../services/bucket.service';
 
 @State<WindfarmModel>({
   name: 'windfarms',
@@ -38,7 +39,7 @@ import {MAX_OUTPUT} from '../../constants/static-data';
 @Injectable()
 export class WindfarmsState {
 
-  constructor(private windFarmService: WindfarmService) {
+  constructor(private windFarmService: WindfarmService, private bucketService: BucketService) {
   }
 
   @Selector()
@@ -80,22 +81,23 @@ export class WindfarmsState {
           ...state,
           output: returnData
         });
-        ctx.dispatch(new WindFarms.FoundSuccessfully(returnData.output));
+        ctx.dispatch(new WindFarms.CalculateCapacity(returnData.output));
       })
     );
   }
 
-  @Action(WindFarms.FoundSuccessfully)
-  calculateCapacityFactor(ctx: StateContext<CapacityFactorModel>, {output}: WindFarms.FoundSuccessfully) {
+  @Action(WindFarms.CalculateCapacity)
+  calculateCapacityFactor(ctx: StateContext<CapacityFactorModel>, {output}: WindFarms.CalculateCapacity) {
     const state = ctx.getState();
     ctx.setState({
       ...state,
       data: []
     });
     return from(output).pipe(
-      groupBy(raw => this.toShortDate(raw.timestamp)),
+      groupBy(raw => this.findBucket(raw.timestamp)),
       mergeMap(group => group.pipe(toArray())),
       tap(items => {
+        console.log(items);
         const item = this.calculateCapacity(items);
         const state = ctx.getState();
         ctx.patchState({
@@ -107,7 +109,7 @@ export class WindfarmsState {
   }
 
   calculateCapacity(rawEnergy: EnergyOutput[]) : EnergyCapacity {
-    const date = this.toShortDate(rawEnergy[0].timestamp)
+    const date = this.findBucket(rawEnergy[0].timestamp)
     const readings = rawEnergy.length
     const totalOutput = rawEnergy.reduce(
       (previousValue, currentValue) => previousValue + currentValue.energy, 0
@@ -119,7 +121,13 @@ export class WindfarmsState {
     }
   }
 
-  toShortDate(timestamp: number){
-    return DateTime.fromSeconds(timestamp).toLocaleString(DateTime.DATE_SHORT)
+  toShortTimestamp(timestamp: number){
+    return DateTime.fromSeconds(timestamp).toUTC().toFormat('dd/MM/yy HH:mm')
+  }
+
+  findBucket(timestamp: number): string{
+    const buckets = this.bucketService.getBuckets();
+    const bucket = buckets.find(b => timestamp >= b.from && timestamp < b.to);
+    return bucket? this.toShortTimestamp(bucket.from): 'unknown';
   }
 }

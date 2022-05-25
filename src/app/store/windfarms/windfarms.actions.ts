@@ -13,7 +13,7 @@ export namespace WindFarms{
     }
   }
 
-  export class FoundSuccessfully {
+  export class CalculateCapacity {
     static readonly type = '[WindFarms] Successfully found a farm and its output';
     constructor(public output: EnergyOutput[]) {
     }

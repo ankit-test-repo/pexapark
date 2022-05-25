@@ -16,12 +16,6 @@ export interface EnergyOutput {
   energy: number
 }
 
-export interface tempReading {
-  date: string;
-  energy: number
-}
-
-
 export interface EnergyCapacity {
   date: string;
   readings: number,
