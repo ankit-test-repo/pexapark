@@ -1,6 +1,6 @@
 <div class="form-group mt-4 mb-5">
   <label for="bucketSize" class="form-label">Bucket size : <strong>{{bucketSize}}</strong> hours</label>
-<input type="range" [(ngModel)]="bucketSize" class="form-range" min="4" max="24" step="1" id="bucketSize">
+<input type="range" (change)="updateCapacityFactor()" [(ngModel)]="bucketSize" class="form-range" min="4" max="24" step="1" id="bucketSize">
 </div>
 <div *ngIf="chartOptions" class="row">
   <ag-charts-angular class="col capacity-factor"

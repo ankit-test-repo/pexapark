@@ -1,6 +1,9 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import {BehaviorSubject, from, groupBy, mergeMap, toArray} from 'rxjs';
 import {Bucket} from '../model/bucket';
+import {EnergyCapacity, EnergyOutput} from '../model/windfarm';
+import {MAX_OUTPUT} from '../constants/static-data';
+import {DateTime} from 'luxon';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +16,7 @@ export class BucketService {
 
   // hardcode range value as the data is only for that given period
   private static start = 1652140800;
-  private static end = 1652896800;
+  private static end = 1652918399;
 
   public getBucketSize(): number {
     return this.bucketSize.getValue();
@@ -29,16 +32,6 @@ export class BucketService {
 
   constructor() {
   }
-
-  /**
-   * use behaviour subject to store bucket
-   * create bucket based on time range
-   * use default as last 7 days 24hr bucket
-   * bucket: {id: any, startTime, endTime, capacityFactor}
-   * use filter for date ranges
-   *
-   * */
-
 
   public createBuckets(): Bucket[] {
     const sizeInSeconds = this.getBucketSize() * 60 * 60;
@@ -57,5 +50,41 @@ export class BucketService {
     }
     this.buckets.next(buckets);
     return buckets;
+  }
+
+  calculateCapacityFactor(output: EnergyOutput[]): EnergyCapacity[] {
+    const capacityFactors: EnergyCapacity[] = [];
+    if(output) {
+      from(output).pipe(
+        groupBy(raw => this.findBucket(raw.timestamp)),
+        mergeMap(group => group.pipe(toArray())),
+      ).subscribe(items => {
+        capacityFactors.push(this.calculateCapacity(items));
+      });
+    }
+    return capacityFactors;
+  }
+
+  calculateCapacity(rawEnergy: EnergyOutput[]) : EnergyCapacity {
+    const date = this.findBucket(rawEnergy[0].timestamp)
+    const readings = rawEnergy.length
+    const totalOutput = rawEnergy.reduce(
+      (previousValue, currentValue) => previousValue + currentValue.energy, 0
+    );
+    return {
+      date: date,
+      capacityFactor: (totalOutput/ readings) / MAX_OUTPUT,
+      readings: readings
+    }
+  }
+
+  toShortTimestamp(timestamp: number){
+    return DateTime.fromSeconds(timestamp).toUTC().toFormat('dd/MM/yy HH:mm')
+  }
+
+  findBucket(timestamp: number): string{
+    const buckets = this.getBuckets();
+    const bucket = buckets.find(b => timestamp >= b.from && timestamp < b.to);
+    return bucket? this.toShortTimestamp(bucket.from): 'unknown';
   }
 }

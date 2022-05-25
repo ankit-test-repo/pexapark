@@ -27,9 +27,6 @@ export class WindfarmModel {
 }
 
 export class WindfarmOutputModel {
-  output: any
+  output!: FarmOutput
 }
 
-export class CapacityFactorModel {
-  data!: EnergyCapacity[]
-}
