@@ -1,0 +1,72 @@
+[
+  {
+    "index": 0,
+    "id": "18e9cc43-c4ba-426f-82fb-21536468983e",
+    "averageOutput": 4,
+    "name": "Robles",
+    "location": "Chester Court"
+  },
+  {
+    "index": 1,
+    "id": "49ac21ce-dea9-497d-a371-763a657d2841",
+    "averageOutput": 3,
+    "name": "Vaughn",
+    "location": "Grove Street"
+  },
+  {
+    "index": 2,
+    "id": "ad1d3a62-d94e-4f34-a89d-b1f880a2e4c6",
+    "averageOutput": 8,
+    "name": "Penelope",
+    "location": "Lawn Court"
+  },
+  {
+    "index": 3,
+    "id": "44752a28-2d85-46da-a248-5c10843964ec",
+    "averageOutput": 6,
+    "name": "Graham",
+    "location": "Java Street"
+  },
+  {
+    "index": 4,
+    "id": "9e5c9f90-57a2-4860-ac47-dbc7d3cd59dd",
+    "averageOutput": 4,
+    "name": "Lori",
+    "location": "Langham Street"
+  },
+  {
+    "index": 5,
+    "id": "9e02d761-115e-4d06-9261-d32f461a1cc9",
+    "averageOutput": 5,
+    "name": "Maynard",
+    "location": "Cooper Street"
+  },
+  {
+    "index": 6,
+    "id": "defc279c-6591-409c-b03d-4a83838851d0",
+    "averageOutput": 5,
+    "name": "Bernadette",
+    "location": "Newport Street"
+  },
+  {
+    "index": 7,
+    "id": "e083f112-51f1-422b-876e-7839bb6e5e0a",
+    "averageOutput": 8,
+    "name": "Shawn",
+    "location": "Minna Street"
+  },
+  {
+    "index": 8,
+    "id": "da9b4427-114b-40c7-b7b5-2a00d1ec3863",
+    "averageOutput": 8,
+    "name": "Mcfadden",
+    "location": "Corbin Place"
+  },
+  {
+    "index": 9,
+    "id": "29f9ad6c-ca74-4e6d-afd6-df6910c78131",
+    "averageOutput": 6,
+    "name": "Sybil",
+    "location": "Etna Street"
+  }
+]

@@ -1,0 +1,783 @@
+{
+  "farmId": "18e9cc43-c4ba-426f-82fb-21536468983e",
+  "output": [
+    {
+      "timestamp": 1652184000,
+      "energy": 2.2
+    },
+    {
+      "timestamp": 1652187600,
+      "energy": 9.3
+    },
+    {
+      "timestamp": 1652191200,
+      "energy": 5.2
+    },
+    {
+      "timestamp": 1652194800,
+      "energy": 6.9
+    },
+    {
+      "timestamp": 1652198400,
+      "energy": 0.6
+    },
+    {
+      "timestamp": 1652202000,
+      "energy": 9.1
+    },
+    {
+      "timestamp": 1652205600,
+      "energy": 3
+    },
+    {
+      "timestamp": 1652209200,
+      "energy": 3.4
+    },
+    {
+      "timestamp": 1652212800,
+      "energy": 3
+    },
+    {
+      "timestamp": 1652216400,
+      "energy": 10
+    },
+    {
+      "timestamp": 1652220000,
+      "energy": 0.2
+    },
+    {
+      "timestamp": 1652223600,
+      "energy": 2.3
+    },
+    {
+      "timestamp": 1652227200,
+      "energy": 1.9
+    },
+    {
+      "timestamp": 1652230800,
+      "energy": 6.2
+    },
+    {
+      "timestamp": 1652234400,
+      "energy": 0.6
+    },
+    {
+      "timestamp": 1652238000,
+      "energy": 5.6
+    },
+    {
+      "timestamp": 1652241600,
+      "energy": 3.6
+    },
+    {
+      "timestamp": 1652245200,
+      "energy": 8.7
+    },
+    {
+      "timestamp": 1652248800,
+      "energy": 4.6
+    },
+    {
+      "timestamp": 1652252400,
+      "energy": 7.3
+    },
+    {
+      "timestamp": 1652256000,
+      "energy": 0.9
+    },
+    {
+      "timestamp": 1652259600,
+      "energy": 1.8
+    },
+    {
+      "timestamp": 1652263200,
+      "energy": 1.8
+    },
+    {
+      "timestamp": 1652266800,
+      "energy": 3.3
+    },
+    {
+      "timestamp": 1652270400,
+      "energy": 6.5
+    },
+
+    {
+      "timestamp": 1652277600,
+      "energy": 8.1
+    },
+    {
+      "timestamp": 1652281200,
+      "energy": 4.1
+    },
+    {
+      "timestamp": 1652284800,
+      "energy": 0.3
+    },
+    {
+      "timestamp": 1652288400,
+      "energy": 3.4
+    },
+    {
+      "timestamp": 1652292000,
+      "energy": 6.6
+    },
+    {
+      "timestamp": 1652295600,
+      "energy": 1
+    },
+    {
+      "timestamp": 1652299200,
+      "energy": 7.6
+    },
+    {
+      "timestamp": 1652302800,
+      "energy": 6.1
+    },
+    {
+      "timestamp": 1652306400,
+      "energy": 2.5
+    },
+    {
+      "timestamp": 1652310000,
+      "energy": 2.9
+    },
+    {
+      "timestamp": 1652313600,
+      "energy": 1.2
+    },
+    {
+      "timestamp": 1652317200,
+      "energy": 1.1
+    },
+    {
+      "timestamp": 1652320800,
+      "energy": 2.2
+    },
+    {
+      "timestamp": 1652324400,
+      "energy": 9.2
+    },
+    {
+      "timestamp": 1652328000,
+      "energy": 8.3
+    },
+    {
+      "timestamp": 1652331600,
+      "energy": 8.7
+    },
+    {
+      "timestamp": 1652335200,
+      "energy": 9.7
+    },
+    {
+      "timestamp": 1652338800,
+      "energy": 6.3
+    },
+
+    {
+      "timestamp": 1652346000,
+      "energy": 0.6
+    },
+    {
+      "timestamp": 1652349600,
+      "energy": 7
+    },
+    {
+      "timestamp": 1652353200,
+      "energy": 0.5
+    },
+    {
+      "timestamp": 1652356800,
+      "energy": 1.6
+    },
+    {
+      "timestamp": 1652360400,
+      "energy": 4.8
+    },
+    {
+      "timestamp": 1652364000,
+      "energy": 9.6
+    },
+    {
+      "timestamp": 1652367600,
+      "energy": 8.1
+    },
+    {
+      "timestamp": 1652371200,
+      "energy": 3.9
+    },
+    {
+      "timestamp": 1652374800,
+      "energy": 4
+    },
+    {
+      "timestamp": 1652378400,
+      "energy": 4.4
+    },
+    {
+      "timestamp": 1652382000,
+      "energy": 3.1
+    },
+    {
+      "timestamp": 1652385600,
+      "energy": 0.5
+    },
+    {
+      "timestamp": 1652389200,
+      "energy": 0.9
+    },
+    {
+      "timestamp": 1652392800,
+      "energy": 1.5
+    },
+    {
+      "timestamp": 1652396400,
+      "energy": 4.2
+    },
+    {
+      "timestamp": 1652400000,
+      "energy": 2.4
+    },
+    {
+      "timestamp": 1652403600,
+      "energy": 2.9
+    },
+    {
+      "timestamp": 1652407200,
+      "energy": 8.7
+    },
+    {
+      "timestamp": 1652410800,
+      "energy": 6.8
+    },
+    {
+      "timestamp": 1652425200,
+      "energy": 8.6
+    },
+    {
+      "timestamp": 1652428800,
+      "energy": 6.6
+    },
+    {
+      "timestamp": 1652432400,
+      "energy": 5.1
+    },
+    {
+      "timestamp": 1652436000,
+      "energy": 3.7
+    },
+    {
+      "timestamp": 1652439600,
+      "energy": 3.9
+    },
+    {
+      "timestamp": 1652443200,
+      "energy": 6.1
+    },
+    {
+      "timestamp": 1652446800,
+      "energy": 7.1
+    },
+    {
+      "timestamp": 1652450400,
+      "energy": 3.8
+    },
+    {
+      "timestamp": 1652454000,
+      "energy": 3.1
+    },
+    {
+      "timestamp": 1652457600,
+      "energy": 6.1
+    },
+    {
+      "timestamp": 1652461200,
+      "energy": 6.9
+    },
+    {
+      "timestamp": 1652464800,
+      "energy": 6.5
+    },
+    {
+      "timestamp": 1652468400,
+      "energy": 4.6
+    },
+    {
+      "timestamp": 1652472000,
+      "energy": 7.9
+    },
+    {
+      "timestamp": 1652475600,
+      "energy": 0.2
+    },
+    {
+      "timestamp": 1652479200,
+      "energy": 7.1
+    },
+    {
+      "timestamp": 1652482800,
+      "energy": 5.8
+    },
+    {
+      "timestamp": 1652486400,
+      "energy": 5.6
+    },
+    {
+      "timestamp": 1652490000,
+      "energy": 1.9
+    },
+    {
+      "timestamp": 1652493600,
+      "energy": 4.9
+    },
+    {
+      "timestamp": 1652497200,
+      "energy": 6.3
+    },
+    {
+      "timestamp": 1652500800,
+      "energy": 0.5
+    },
+    {
+      "timestamp": 1652504400,
+      "energy": 3.9
+    },
+    {
+      "timestamp": 1652508000,
+      "energy": 4.7
+    },
+    {
+      "timestamp": 1652511600,
+      "energy": 8.7
+    },
+    {
+      "timestamp": 1652515200,
+      "energy": 9.3
+    },
+    {
+      "timestamp": 1652518800,
+      "energy": 3.3
+    },
+    {
+      "timestamp": 1652522400,
+      "energy": 2.5
+    },
+    {
+      "timestamp": 1652526000,
+      "energy": 6.6
+    },
+    {
+      "timestamp": 1652529600,
+      "energy": 3
+    },
+    {
+      "timestamp": 1652533200,
+      "energy": 6.5
+    },
+    {
+      "timestamp": 1652536800,
+      "energy": 7.6
+    },
+    {
+      "timestamp": 1652540400,
+      "energy": 3.2
+    },
+    {
+      "timestamp": 1652544000,
+      "energy": 9.7
+    },
+    {
+      "timestamp": 1652547600,
+      "energy": 8
+    },
+    {
+      "timestamp": 1652551200,
+      "energy": 6.4
+    },
+    {
+      "timestamp": 1652554800,
+      "energy": 5.9
+    },
+    {
+      "timestamp": 1652558400,
+      "energy": 5.2
+    },
+    {
+      "timestamp": 1652562000,
+      "energy": 3.2
+    },
+    {
+      "timestamp": 1652565600,
+      "energy": 4.8
+    },
+    {
+      "timestamp": 1652569200,
+      "energy": 9.9
+    },
+    {
+      "timestamp": 1652572800,
+      "energy": 8.4
+    },
+    {
+      "timestamp": 1652576400,
+      "energy": 7.7
+    },
+    {
+      "timestamp": 1652580000,
+      "energy": 1.8
+    },
+    {
+      "timestamp": 1652583600,
+      "energy": 3.5
+    },
+    {
+      "timestamp": 1652587200,
+      "energy": 5.8
+    },
+    {
+      "timestamp": 1652590800,
+      "energy": 3.9
+    },
+    {
+      "timestamp": 1652594400,
+      "energy": 0.8
+    },
+    {
+      "timestamp": 1652598000,
+      "energy": 9.3
+    },
+    {
+      "timestamp": 1652601600,
+      "energy": 4
+    },
+    {
+      "timestamp": 1652605200,
+      "energy": 7.8
+    },
+    {
+      "timestamp": 1652608800,
+      "energy": 8.4
+    },
+    {
+      "timestamp": 1652612400,
+      "energy": 0.9
+    },
+    {
+      "timestamp": 1652616000,
+      "energy": 6.2
+    },
+    {
+      "timestamp": 1652619600,
+      "energy": 2
+    },
+    {
+      "timestamp": 1652623200,
+      "energy": 6.1
+    },
+    {
+      "timestamp": 1652626800,
+      "energy": 5.1
+    },
+    {
+      "timestamp": 1652630400,
+      "energy": 3.6
+    },
+    {
+      "timestamp": 1652634000,
+      "energy": 7.6
+    },
+    {
+      "timestamp": 1652637600,
+      "energy": 6.9
+    },
+    {
+      "timestamp": 1652641200,
+      "energy": 9.6
+    },
+    {
+      "timestamp": 1652644800,
+      "energy": 6.7
+    },
+    {
+      "timestamp": 1652648400,
+      "energy": 0.3
+    },
+    {
+      "timestamp": 1652652000,
+      "energy": 1.4
+    },
+    {
+      "timestamp": 1652655600,
+      "energy": 1.8
+    },
+    {
+      "timestamp": 1652659200,
+      "energy": 4.9
+    },
+    {
+      "timestamp": 1652662800,
+      "energy": 8.1
+    },
+    {
+      "timestamp": 1652666400,
+      "energy": 9.5
+    },
+    {
+      "timestamp": 1652670000,
+      "energy": 0.2
+    },
+    {
+      "timestamp": 1652673600,
+      "energy": 7.8
+    },
+    {
+      "timestamp": 1652677200,
+      "energy": 5
+    },
+    {
+      "timestamp": 1652680800,
+      "energy": 3.7
+    },
+    {
+      "timestamp": 1652684400,
+      "energy": 3
+    },
+    {
+      "timestamp": 1652688000,
+      "energy": 9.5
+    },
+    {
+      "timestamp": 1652691600,
+      "energy": 0.6
+    },
+    {
+      "timestamp": 1652695200,
+      "energy": 5
+    },
+    {
+      "timestamp": 1652698800,
+      "energy": 6.4
+    },
+    {
+      "timestamp": 1652702400,
+      "energy": 5.1
+    },
+    {
+      "timestamp": 1652706000,
+      "energy": 0.4
+    },
+    {
+      "timestamp": 1652709600,
+      "energy": 6.4
+    },
+    {
+      "timestamp": 1652713200,
+      "energy": 6.5
+    },
+    {
+      "timestamp": 1652716800,
+      "energy": 4.3
+    },
+    {
+      "timestamp": 1652720400,
+      "energy": 0.1
+    },
+    {
+      "timestamp": 1652724000,
+      "energy": 2.1
+    },
+    {
+      "timestamp": 1652727600,
+      "energy": 4.8
+    },
+    {
+      "timestamp": 1652731200,
+      "energy": 4.5
+    },
+    {
+      "timestamp": 1652734800,
+      "energy": 3.3
+    },
+    {
+      "timestamp": 1652738400,
+      "energy": 7.1
+    },
+    {
+      "timestamp": 1652742000,
+      "energy": 6.2
+    },
+    {
+      "timestamp": 1652745600,
+      "energy": 4.9
+    },
+    {
+      "timestamp": 1652749200,
+      "energy": 0.8
+    },
+    {
+      "timestamp": 1652752800,
+      "energy": 5.2
+    },
+    {
+      "timestamp": 1652756400,
+      "energy": 6.1
+    },
+    {
+      "timestamp": 1652760000,
+      "energy": 8.9
+    },
+    {
+      "timestamp": 1652763600,
+      "energy": 4.6
+    },
+    {
+      "timestamp": 1652767200,
+      "energy": 6.6
+    },
+    {
+      "timestamp": 1652770800,
+      "energy": 4
+    },
+    {
+      "timestamp": 1652774400,
+      "energy": 5.4
+    },
+    {
+      "timestamp": 1652778000,
+      "energy": 3
+    },
+    {
+      "timestamp": 1652781600,
+      "energy": 2
+    },
+    {
+      "timestamp": 1652785200,
+      "energy": 4.1
+    },
+    {
+      "timestamp": 1652788800,
+      "energy": 3.5
+    },
+    {
+      "timestamp": 1652792400,
+      "energy": 3.3
+    },
+    {
+      "timestamp": 1652796000,
+      "energy": 4.3
+    },
+    {
+      "timestamp": 1652799600,
+      "energy": 1.1
+    },
+    {
+      "timestamp": 1652803200,
+      "energy": 3
+    },
+    {
+      "timestamp": 1652806800,
+      "energy": 5.3
+    },
+    {
+      "timestamp": 1652810400,
+      "energy": 2.1
+    },
+    {
+      "timestamp": 1652814000,
+      "energy": 6.2
+    },
+    {
+      "timestamp": 1652817600,
+      "energy": 3.1
+    },
+    {
+      "timestamp": 1652821200,
+      "energy": 1.7
+    },
+    {
+      "timestamp": 1652824800,
+      "energy": 6
+    },
+    {
+      "timestamp": 1652828400,
+      "energy": 2.9
+    },
+    {
+      "timestamp": 1652832000,
+      "energy": 10
+    },
+    {
+      "timestamp": 1652835600,
+      "energy": 5.6
+    },
+    {
+      "timestamp": 1652839200,
+      "energy": 0.1
+    },
+    {
+      "timestamp": 1652842800,
+      "energy": 7.8
+    },
+    {
+      "timestamp": 1652846400,
+      "energy": 8.5
+    },
+    {
+      "timestamp": 1652850000,
+      "energy": 3.1
+    },
+    {
+      "timestamp": 1652853600,
+      "energy": 4.8
+    },
+    {
+      "timestamp": 1652857200,
+      "energy": 0.1
+    },
+    {
+      "timestamp": 1652860800,
+      "energy": 4.8
+    },
+    {
+      "timestamp": 1652864400,
+      "energy": 3.4
+    },
+    {
+      "timestamp": 1652868000,
+      "energy": 0.2
+    },
+    {
+      "timestamp": 1652871600,
+      "energy": 8.1
+    },
+    {
+      "timestamp": 1652875200,
+      "energy": 5.7
+    },
+    {
+      "timestamp": 1652878800,
+      "energy": 3.5
+    },
+    {
+      "timestamp": 1652882400,
+      "energy": 4.6
+    },
+    {
+      "timestamp": 1652886000,
+      "energy": 9.8
+    },
+    {
+      "timestamp": 1652889600,
+      "energy": 6.6
+    },
+    {
+      "timestamp": 1652893200,
+      "energy": 3.7
+    },
+    {
+      "timestamp": 1652896800,
+      "energy": 7.6
+    }
+  ]
+}

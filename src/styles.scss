@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+$primary:       #001e52;
+$secondary:     #ff3065;
+@import "~bootstrap";
+
+.clickable{
+  cursor: pointer;
+}
