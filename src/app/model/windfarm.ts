@@ -21,7 +21,7 @@ export interface EnergyCapacity {
   readings: number,
   capacityFactor: number
 }
-
+// models for store selectors
 export class WindfarmsModel {
   farms!: Windfarm[]
 }

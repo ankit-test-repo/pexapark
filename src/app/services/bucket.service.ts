@@ -39,6 +39,7 @@ export class BucketService {
     // this is test project so does not need a UUID
     let id: number = 1;
     const buckets: Bucket[] = [];
+    // given timestamps are in seconds we can easily create buckets by adding seconds
     while (currentStart < BucketService.end) {
       buckets.push({
         id: id,
@@ -56,10 +57,10 @@ export class BucketService {
     const capacityFactors: EnergyCapacity[] = [];
     if(output) {
       from(output).pipe(
-        groupBy(raw => this.findBucket(raw.timestamp)),
-        mergeMap(group => group.pipe(toArray())),
+        groupBy(raw => this.findBucket(raw.timestamp)), // group energy reading based on the bucket start time
+        mergeMap(group => group.pipe(toArray())), // return the array of grouped observable of output in buckets
       ).subscribe(items => {
-        capacityFactors.push(this.calculateCapacity(items));
+        capacityFactors.push(this.calculateCapacity(items)); // create capacity factor for each bucket
       });
     }
     return capacityFactors;
@@ -68,6 +69,7 @@ export class BucketService {
   calculateCapacity(rawEnergy: EnergyOutput[]) : EnergyCapacity {
     const date = this.findBucket(rawEnergy[0].timestamp)
     const readings = rawEnergy.length
+    // aggregating data
     const totalOutput = rawEnergy.reduce(
       (previousValue, currentValue) => previousValue + currentValue.energy, 0
     );
@@ -78,6 +80,7 @@ export class BucketService {
     }
   }
 
+  // this is used as an identifier for bucket
   toShortTimestamp(timestamp: number){
     return DateTime.fromSeconds(timestamp).toUTC().toFormat('dd/MM/yy HH:mm')
   }
