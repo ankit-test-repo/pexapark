@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Select, Store} from '@ngxs/store';
-import {Observable} from 'rxjs';
-import {EnergyCapacity, EnergyOutput, FarmOutput} from '../../model/windfarm';
+import {map, Observable} from 'rxjs';
+import {EnergyCapacity, EnergyOutput, FarmOutput, Windfarm} from '../../model/windfarm';
 import {WindFarms} from '../../store/windfarms/windfarms.actions';
 import {WindfarmsState} from '../../store/windfarms/windfarms.state';
 import {AgChartOptions} from 'ag-charts-community';
@@ -16,6 +16,7 @@ import {BucketService} from '../../services/bucket.service';
 })
 export class FarmOutputComponent implements OnInit {
   @Select(WindfarmsState.farmOutput) farmOutput$!: Observable<FarmOutput>;
+  windFarm?: Windfarm;
   public chartOptions?: AgChartOptions;
   public bucketSize: number = 24;
   private energyOutput: EnergyOutput[] = [];
@@ -29,6 +30,9 @@ export class FarmOutputComponent implements OnInit {
     const farmId = this._Activatedroute.snapshot.paramMap.get("id");
     if (!!farmId) {
       this.store.dispatch(new WindFarms.Find(farmId));
+      this.store.select(WindfarmsState.selectedFarm).pipe(map(findFn => findFn(farmId)))
+        .subscribe(farm => this.windFarm = farm);
+
     }
     this.bucketSize = this.bucketService.getBucketSize();
 

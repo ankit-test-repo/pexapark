@@ -22,8 +22,12 @@ export interface EnergyCapacity {
   capacityFactor: number
 }
 
+export class WindfarmsModel {
+  farms!: Windfarm[]
+}
+
 export class WindfarmModel {
-  farms: any
+  farm?: Windfarm
 }
 
 export class WindfarmOutputModel {

@@ -1,9 +1,25 @@
+<div class="row mt-4 mb-4">
+  <div class="col">
+    <div class="card text-bg-light">
+      <div class="card-body">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="'/farms'">All farms</a></li>
+            <li class="breadcrumb-item active" *ngIf="(windFarm) as farm" aria-current="page">{{farm.name}}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="form-group mt-4 mb-5">
   <label for="bucketSize" class="form-label">Bucket size : <strong>{{bucketSize}}</strong> hours</label>
-<input type="range" (change)="updateCapacityFactor()" [(ngModel)]="bucketSize" class="form-range" min="4" max="24" step="1" id="bucketSize">
+  <input type="range" (change)="updateCapacityFactor()" [(ngModel)]="bucketSize" class="form-range" min="4" max="24"
+         step="1" id="bucketSize">
 </div>
 <div *ngIf="chartOptions" class="row">
   <ag-charts-angular class="col capacity-factor"
-    [options]="chartOptions">
+                     [options]="chartOptions">
   </ag-charts-angular>
 </div>

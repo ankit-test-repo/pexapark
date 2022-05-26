@@ -1,5 +1,3 @@
-import {EnergyOutput, FarmOutput} from '../../model/windfarm';
-
 export namespace WindFarms{
   export class Load {
     static readonly type = '[WindFarms] load all farms';
@@ -13,11 +11,6 @@ export namespace WindFarms{
     }
   }
 
-  export class CalculateCapacity {
-    static readonly type = '[WindFarms] Successfully found a farm and its output';
-    constructor(public output: EnergyOutput[]) {
-    }
-  }
 }
 
 

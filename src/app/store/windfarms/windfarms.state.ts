@@ -3,15 +3,14 @@ import {WindFarms} from './windfarms.actions';
 import {WindfarmService} from '../../services/windfarm.service';
 import {tap} from 'rxjs';
 import {Injectable} from '@angular/core';
-import {WindfarmModel, WindfarmOutputModel} from '../../model/windfarm';
+import {WindfarmOutputModel, WindfarmsModel} from '../../model/windfarm';
 
-@State<WindfarmModel>({
+@State<WindfarmsModel>({
   name: 'windfarms',
   defaults: {
     farms : []
   }
 })
-
 
 @State<WindfarmOutputModel>({
   name: 'windfarmOutput',
@@ -28,8 +27,15 @@ export class WindfarmsState {
   }
 
   @Selector()
-  static allWindFarms(state: WindfarmModel) {
+  static allWindFarms(state: WindfarmsModel) {
     return state.farms;
+  }
+
+  @Selector()
+  static selectedFarm(state: WindfarmsModel) {
+    return (id: string) => {
+      return state.farms.find(farm => farm.id === id);
+    };
   }
 
   @Selector()
@@ -38,7 +44,7 @@ export class WindfarmsState {
   }
 
   @Action(WindFarms.Load)
-  load(ctx: StateContext<WindfarmModel>) {
+  load(ctx: StateContext<WindfarmsModel>) {
     return this.windFarmService.getAllFarms().pipe(
       tap(returnData =>{
         const state = ctx.getState();
